@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<form method="POST">
+               <input class="search_input" id="identifier" name="identifier" type="text" placeholder="请输入标识码进行查询"/>
+                <br><br>
+                <div style="text-align: center;"><input class="read_more" align="center" id="search" name="search"
+                                                        type="submit" value="查询"></div>
+</form>
+<div class="domain-price">
+    <ul>
+        {% for dessert in desserts %}
+            <li>{{ dessert.identifier }} - ${{ dessert.price }}, {{ dessert.info }}
+        {% endfor %}
+
+        <div style="text-align: center;"><a href="/add" class="read_more">添加标识</a>
+    </ul>
+</div>
+
+</html>

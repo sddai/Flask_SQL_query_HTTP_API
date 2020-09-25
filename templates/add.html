@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+
+{% if dessert %}
+
+<p><strong>{{dessert.name}}</strong> successfully created! Add another below.</p>
+<p><a href="/">Back to List</a></p>
+
+{% endif %}
+
+
+<!-- The form action and method correspond to a Flask route -->
+<form action="/add" method="POST">
+
+<label for="name_id">标&emsp;&emsp;识</label>
+<input id="name_id" name="name_field" type="text" /><br>
+
+<label for="price_id">价&emsp;&emsp;格</label>
+<input id="price_id" name="price_field" type="text"  /><br>
+
+
+<label for="website_id">网&emsp;&emsp;址</label>
+<input id="website_id" name="website_field" type="text"  /><br>
+
+<label for="status_id">企业状态</label>
+<input id="status_id" name="status_field" type="text"  /><br>
+
+<label for="introduce_id">企业简介</label>
+<input id="introduce_id" name="introduce_field" type="text"  /><br>
+
+<label for="time_id">生产时间</label>
+<input id="time_id" name="time_field" type="text"  /><br>
+
+<label for="industry_id">行&emsp;&emsp;业</label>
+<input id="industry_id" name="industry_field" type="text"  /><br>
+
+
+<!-- We need a submit button to submit a form! -->
+<input class="read_more" type="submit" value="添加标识"/>
+      <br><br><br>
+   <div class="read_more"  href="/" > <a href="/"> 返回首页 </a></div>
+
+</form>
+</html>
