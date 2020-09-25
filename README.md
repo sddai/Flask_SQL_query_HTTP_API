@@ -1,4 +1,4 @@
-## Flask_SQL_query_RestAPI_and_web_app
+## Flask_SQL_query_API_and_web_app
 
 This is a simple app using [Flask](http://flask.pocoo.org), [SQLAlchemy](http://www.sqlalchemy.org/) and the connecting [Flask-SQLAlchemy](http://flask-sqlalchemy.pocoo.org) library.
 
